@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Budget Calculator</string>
+    <string name="monthly_budget">Monthly Budget</string>
+    <string name="income_1">INCOME 1:</string>
+    <string name="income_2">INCOME 2:</string>
+    <string name="example_4000_00">Example: 4000.00</string>
+    <string name="example_3000_00">Example: 3000.00</string>
+    <string name="example_100_00">Example: 100.00</string>
+    <string name="expense_1">Expense 1:</string>
+    <string name="expense_2">Expense 2:</string>
+    <string name="expense_3">Expense 3:</string>
+    <string name="expense_4">Expense 4:</string>
+    <string name="calculate_net_balance">Calculate Net Balance</string>
+    <string name="final_total">Final Total</string>
+    <string name="total_2">Total 2</string>
+    <string name="total_1">Total 1</string>
+    <string name="string_total_1" />
+</resources>
