@@ -11,8 +11,12 @@
     <string name="expense_3">Expense 3:</string>
     <string name="expense_4">Expense 4:</string>
     <string name="calculate_net_balance">Calculate Net Balance</string>
-    <string name="final_total">Final Total</string>
-    <string name="total_2">Total 2</string>
-    <string name="total_1">Total 1</string>
+
     <string name="string_total_1" />
+    <string name="_3106_02">3106.02</string>
+    <string name="_393_98">393.98</string>
+    <string name="_3500_00">3500.00</string>
+    <string name="total_2">Total 2</string>
+    <string name="final_total">Final Total</string>
+    <string name="total_1">Total 1</string>
 </resources>

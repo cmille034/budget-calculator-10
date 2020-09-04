@@ -1,12 +1,14 @@
 package com.example.budgetcalculator;
-import android.support.v4.app.RemoteActionCompatParcelizer;
-import android.support.v4.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-public class MainActivity {
+
+import androidx.appcompat.app.AppCompatActivity;
+
+public class MainActivity extends AppCompatActivity {
     private EditText mIncome_1;
     private EditText mIncome_2;
     private EditText mExpense_1;
@@ -16,12 +18,13 @@ public class MainActivity {
     private TextView mIncome_Total;
     private TextView mExpense_Total;
     private TextView mFinal_Total;
-    private Button mCalculate_Button;
+    Button mCalculate_Button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        onCreate(savedInstanceState);
+        super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         mIncome_1 = findViewById(R.id.Income_1);
         mIncome_2 = findViewById(R.id.Income_2);
         mExpense_1 = findViewById(R.id.Expense_1);
@@ -31,7 +34,8 @@ public class MainActivity {
         mIncome_Total = findViewById(R.id.Income_Total);
         mExpense_Total = findViewById(R.id.Expense_Total);
         mFinal_Total = findViewById(R.id.Final_Total);
-        mCalculate_Button = findViewById(R.id.Calculate_Button);
+        mCalculate_Button = (Button) findViewById(R.id.Calculate_Button);
+
         mCalculate_Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -49,17 +53,11 @@ public class MainActivity {
                 int Exp4 = Integer.parseInt(mExpense_4.getText().toString());
                 int incsum = Inc1 + Inc2;
                 int expsum = Exp1 + Exp2 + Exp3 + Exp4;
-                int finalsum = incsum + expsum;
+                int finalsum = incsum - expsum;
                 mIncome_Total.setText(String.valueOf(incsum));
                 mExpense_Total.setText(String.valueOf(expsum));
                 mFinal_Total.setText(String.valueOf(finalsum));
             }
         });
-    }
-
-    private void setContentView(int activity_main) {
-    }
-
-    private EditText findViewById(int income_1) {
     }
 }
